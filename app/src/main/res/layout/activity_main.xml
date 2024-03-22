@@ -9,27 +9,30 @@
 
     <TextView
         android:id="@+id/text_view_a"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#f20"
         android:paddingHorizontal="25dp"
         android:paddingVertical="10dp"
         android:text="A"
         android:textSize="20sp"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/text_view_b"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_view_b"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#4DA485"
         android:paddingHorizontal="25dp"
         android:paddingVertical="10dp"
         android:text="B"
         android:textSize="20sp"
+        app:layout_constraintHorizontal_weight="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/text_view_c"
         app:layout_constraintStart_toEndOf="@id/text_view_a"
@@ -37,13 +40,14 @@
 
     <TextView
         android:id="@+id/text_view_c"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#03A9F4"
         android:paddingHorizontal="25dp"
         android:paddingVertical="10dp"
         android:text="C"
         android:textSize="20sp"
+        app:layout_constraintHorizontal_weight="6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/text_view_b"
